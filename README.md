@@ -10,4 +10,4 @@ Simple search application for capitals of American states and Canadian provinces
 2. In the terminal, run the command git clone https://github.com/4yerik/autocomplete.git
 3. Open index.html
 4. Right click (inside index.html) and choose the option "Open with Live Server"
-5. All done, test it out!
+5. A tab should pop up in the browser. Test it out!
