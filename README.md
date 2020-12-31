@@ -1,7 +1,7 @@
 # autocomplete
 ## About
 
-Simple search application for capitals of American states and Canadian provinces
+Simple search application for capitals of American states and Canadian provinces 📍
 
 ![Demo](https://github.com/4yerik/images/blob/master/projects/search.gif?raw=true)
 
