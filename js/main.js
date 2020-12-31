@@ -16,23 +16,22 @@ const searchStates = async searchText => {
         matches = []
         matchList.innerHTML = ``;
     }
-
-    outputHtml(matches)
+    else {
+        outputHtml(matches)
+    }
 };
 
 const outputHtml = matches => {
-    if (matches.length > 0) {
-        const html = matches.map(match => `
-        <div class ="card card-body mb-1">
-            <h4>
-                ${match.name} (${match.abbr}) 
-                <span class="text-primary">${match.capital}</span>
-            </h4>
-            <small>Lat: ${match.lat} / Long: ${match.long}</small>
-        </div>
-        `).join('');
-        matchList.innerHTML = html;
-    }
+    const html = matches.map(match => `
+    <div class ="card card-body mb-1">
+        <h4>
+            ${match.name} (${match.abbr}) 
+            <span class="text-primary">${match.capital}</span>
+        </h4>
+        <small>Lat: ${match.lat} / Long: ${match.long}</small>
+    </div>
+    `).join('');
+    matchList.innerHTML = html;
 }
 
 search.addEventListener('input', () => searchStates(search.value));
