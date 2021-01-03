@@ -7,8 +7,6 @@ const searchStates = async searchText => {
 
     let matches = states.filter(state => {
         const regex = new RegExp(`^${searchText}`, 'gi');
-        console.log("fileter");
-
         return state.name.match(regex) || state.abbr.match(regex);
     });
 
